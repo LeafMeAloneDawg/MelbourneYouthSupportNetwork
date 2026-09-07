@@ -725,20 +725,26 @@ textarea:focus {
    ABOUT PAGE
    ========================= */
 
-/* formatting ABOUT US title in banner image */
-.text_on_image {
-    position: relative;
-    display: inline-block;
-    left: 50%;
-    transform: translateX(-50%);
-}
 
-.text_on_image img {
+/* formatting ABOUT US title in banner image */
+.banner_text{
+    position: relative;
+    display: grid;
+    place-items: center;
     width: 100%;
     max-width: 100%;
 }
 
-.text_overlay {
+/* image in banner image */
+.banner_text img{
+     border-radius: 2rem 2rem 2rem 2rem;
+     width: 60%;
+     height: auto;
+     
+}
+
+/* text overlay in banner image */
+.text_overlay{
     position: absolute;
     top: 75%;
     left: 50%;
@@ -746,29 +752,33 @@ textarea:focus {
     font-weight: bold;
     font-size: 3vw;
     color: #09427e;
-}
-
-.img_banner {
-    width: 100%;
-    height: 15%;
+    margin: 0 0 1rem;
+    padding: 0.75rem 1rem;
+    background-color: rgba(234, 242, 255, 0.62);
+    border-radius: 2rem 2rem 2rem 2rem;
+    border: 1px solid #3b82f6;
+    width: 20%;
+    text-align: center;
 }
 
 /* formatting table */
-tbody tr:nth-child(odd) {
+tbody tr:nth-child(odd){
     background-color: #7fdbffB0;
 }
 
-.table_layout {
+/* table layout */
+.table_layout{
     margin: 0 auto;
 }
 
-caption {
+/* table caption */
+caption{
     font-size: 1.2rem;
     font-weight: bold;
 }
 
 /* seperate caption */
-section {
+section{
     position: relative;
     overflow: hidden;
     margin-bottom: 1.5em;
@@ -780,8 +790,8 @@ section {
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
 }
 
-/* formatting group contributions tables */
-.group_contributions dd {
+/* definition list term descriptions in about page */
+.group_contributions dd{
     display: grid;
     grid-template-columns: minmax(0, 1fr);
     padding-left: 1rem;
@@ -799,17 +809,25 @@ section {
     word-break: break-word;
 }
 
-.group_contributions dt {
+.group_contributions dd ol{
+    padding: 1rem 1rem;
+    
+}
+
+/* definition list term in about page */
+.group_contributions dt{
     font-size: 1.1rem;
 }
 
-.about_layout h1 {
+/* heading in about page */
+.about_layout h1{
     margin-top: 0;
     font-size: 1.4em;
     color: #09427e;
 }
 
-.course_details {
+/* course details in about page */
+.course_details{
     font-weight: bold;
     margin: 0 0 1em;
     padding: 0.75em 1em;
@@ -818,13 +836,15 @@ section {
     border: 1px solid #3b82f6;
 }
 
-.course_details li ul li {
+/* nested list in course details */
+.course_details li ul li{
     font-weight: normal;
     padding: auto;
     margin: 0;
 }
 
-.about_intro {
+/* intro in about page */
+.about_intro{
     display: grid;
     grid-template-columns: max-content 1fr;
     gap: 0.25em 1em;
@@ -837,7 +857,8 @@ section {
     font-size: 1.5rem;
 }
 
-.main_about {
+/* main in about page */
+.main_about{
     margin: 2%;
 }
 
