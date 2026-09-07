@@ -152,7 +152,7 @@ table {
 .content-background-and-border{
     background-color: #eaf2ff;
     border: 2px solid;
-    border-radius: 6px;
+    border-radius: 16px;
     max-width: 1600px;
     min-width: 1600px;
 }
@@ -160,7 +160,7 @@ table {
 #index_logo {
     background-color: #eaf2ff;
     border: 2px solid;
-    border-radius: 6px;
+    border-radius: 16px;
     border-top: none;
     max-width: 1600px;
     min-width: 1600px;
@@ -183,16 +183,24 @@ table {
 #index-description {
     padding: 1.25em 1.5em;
     margin-top: 10px;
-    text-align: center;
+    align-items: center;
 }
 
 #index-description p{
-    margin-top: 6px;
+    margin: 4px 0 0 0;
+    font-size: 1.5em;
 }
 
-/* Set font size of company slogan to 1.5x normal font size */
+/* Set font size of company slogan to 1.5x normal font size*/
 .company-slogan{
+    display: block;
     font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 10px;
+    border: 2px solid;
+    padding: 6px 0;
+    border-radius: 6px;
+
 }
 /* Set program schedule div to use flexbox colum display and add margin between it and element above */
 #programSchedule-layout{
