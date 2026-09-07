@@ -181,6 +181,8 @@ table {
 }
 
 #index-description {
+    display: flex;
+    flex-direction: column;
     padding: 1.25em 1.5em;
     margin-top: 10px;
     align-items: center;
@@ -188,17 +190,32 @@ table {
 
 #index-description p{
     margin: 4px 0 0 0;
-    font-size: 1.5em;
+    font-size: 1.1em;
 }
 
-/* Set font size of company slogan to 1.5x normal font size*/
+#index-description img{
+    width: 600px;
+    margin-left: 10px;
+    border: 2px solid;
+    border-radius: 6px;
+}
+
+#description-image-text{
+    display: flex;
+}
+
+/* Company Slogan Styling
+    Set font size to 1.5x normal font size
+    Align text to center
+    Add rounded border and padding
+*/
 .company-slogan{
     display: block;
     font-size: 1.5em;
     text-align: center;
     margin-bottom: 10px;
     border: 2px solid;
-    padding: 6px 0;
+    padding: 6px 30px;
     border-radius: 6px;
 
 }
@@ -209,7 +226,9 @@ table {
     flex-direction: column;
     margin-top: 10px;
 }
-
+#programSchedule-layout h2{
+    margin-bottom: 10px;
+}
 
 /* Acknowledgment of country styling
     Set display to flexbox to allow for image to the left of text.
