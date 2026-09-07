@@ -609,14 +609,14 @@ input:focus, select:focus, textarea:focus {
    ========================= */
 
    /* formatting ABOUT US title in banner image */
-.text_on_image{
+.banner_text{
     position: relative;
-    display: inline-block;
+    display: grid;
+    place-items: center;
 }
 
-.text_on_image img{
-    width: 100%;
-    height: 15%;
+.banner_text img{
+     border-radius: 2rem 2rem 2rem 2rem;
 }
 
 .text_overlay{
@@ -627,12 +627,11 @@ input:focus, select:focus, textarea:focus {
     font-weight: bold;
     font-size: 3rem;
     color: #09427e;
-}
-
-.img_banner{
-    width: 100%;
-    height: 15%;
-    border-radius: 5%;
+    margin: 0 0 1rem;
+    padding: 0.75rem 1rem;
+    background-color: rgba(234, 242, 255, 0.62);
+    border-radius: 2rem 2rem 2rem 2rem;
+    border: 1px solid #3b82f6;
 }
 
 /* formatting table */
