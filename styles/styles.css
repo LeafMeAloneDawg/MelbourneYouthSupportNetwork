@@ -24,6 +24,7 @@ body {
     flex-direction: column;
     width: 100%;
     overflow-x: hidden;
+
 }
 
 /* Navigation */
@@ -120,30 +121,81 @@ footer a:hover {
     z-index: 1000;
 }
 
-/* =========================
-   Index PAGE
-   ========================= */
-
-th, td{
-    text-align: center; 
+/* Tables shared between index and about page */
+th,
+td {
+    text-align: center;
     padding: 5px;
     margin: 0px;
 }
 
-table, th, td {
+table,
+th,
+td {
     border: 2px solid;
     border-collapse: collapse;
 }
 
 table {
     background-color: white;
-    width: 80%;
-    align-self: center;
+    max-width: 80%;
     margin-bottom: 10px;
 }
 
-/* tr:nth-child(odd){background-color: #7fdbffB0;}
-tr:nth-child(1){background-color: #3b82f6;} */
+
+/* =========================
+   Index PAGE
+   ========================= */
+.index-page {
+    background-image: url("images/Lightblue.jpeg");
+    background-size: 100% auto;
+    background-position: center top;
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+}
+
+#index-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#index-description {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid;
+    border-radius: 6px;
+    padding: 1.25em 1.5em;
+    background-color: #eaf2ff;
+    margin-top: 10px;
+}
+
+#index_logo {
+    background-color: #eaf2ff;
+    border: 2px solid;
+    border-radius: 6px;
+    border-top: none;
+
+}
+
+#programSchedule-layout{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid;
+    border-radius: 6px;
+    min-width: 1600px;
+    margin-top: 10px;
+    background-color: #eaf2ff;
+}
+
+
+
+
+
+
+
+
 
 /* =========================
    JOBS PAGE
@@ -175,7 +227,7 @@ tr:nth-child(1){background-color: #3b82f6;} */
 
 /* Paragraphs that sit directly on the background photo get a
    semi-transparent white panel so they stay readable */
-.jobs-page main > p {
+.jobs-page main>p {
     width: fit-content;
     max-width: 100%;
     margin: 0 2.2rem 1em;
@@ -361,12 +413,17 @@ aside::before {
 }
 
 /* vary the crop per card so they don't look identical */
-.job-listings section:nth-child(2)::before { background-position: right top; }
-.job-listings section:nth-child(3)::before { background-position: left bottom; }
+.job-listings section:nth-child(2)::before {
+    background-position: right top;
+}
+
+.job-listings section:nth-child(3)::before {
+    background-position: left bottom;
+}
 
 /* keep the actual content above the texture layer */
-.job-listings section > *,
-aside > * {
+.job-listings section>*,
+aside>* {
     position: relative;
     z-index: 1;
 }
@@ -395,7 +452,7 @@ aside > * {
 .apply-page {
     background-image: url("images/Lightblue.jpeg");
     background-size: 100% auto;
-     background-position: center top;
+    background-position: center top;
     background-repeat: repeat-y;
     background-attachment: fixed;
 }
@@ -455,7 +512,9 @@ legend {
 
 /* Input, Select, and Textarea Styles */
 
-input, select, textarea {
+input,
+select,
+textarea {
     border: 1.5px solid #d7e7ff;
     border-radius: 5px;
     padding: 8px;
@@ -470,7 +529,9 @@ fieldset select:hover {
 }
 
 /* For Accessibility: Focus Styles for Input, Select, and Textarea */
-input:focus, select:focus, textarea:focus {
+input:focus,
+select:focus,
+textarea:focus {
     outline: 3px solid #6495ed;
     outline-offset: 2px;
 }
@@ -594,8 +655,8 @@ input:focus, select:focus, textarea:focus {
     width: 150px;
     padding: 8px;
     font-size: 1.1em;
-    border: 2px solid #6495ed; 
-    border-radius: 5px; 
+    border: 2px solid #6495ed;
+    border-radius: 5px;
     background-color: white;
 }
 
@@ -608,18 +669,20 @@ input:focus, select:focus, textarea:focus {
    ABOUT PAGE
    ========================= */
 
-   /* formatting ABOUT US title in banner image */
-.text_on_image{
+/* formatting ABOUT US title in banner image */
+.text_on_image {
     position: relative;
     display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-.text_on_image img{
+.text_on_image img {
     width: 100%;
     height: 15%;
 }
 
-.text_overlay{
+.text_overlay {
     position: absolute;
     top: 75%;
     left: 50%;
@@ -629,27 +692,27 @@ input:focus, select:focus, textarea:focus {
     color: #09427e;
 }
 
-.img_banner{
+.img_banner {
     width: 100%;
     height: 15%;
 }
 
 /* formatting table */
-tbody tr:nth-child(odd){
+tbody tr:nth-child(odd) {
     background-color: #7fdbffB0;
 }
 
-.table_layout{
+.table_layout {
     margin: 0 auto;
 }
 
-caption{
+caption {
     font-size: 1.2rem;
     font-weight: bold;
 }
 
 /* seperate caption */
-section{
+section {
     position: relative;
     overflow: hidden;
     margin-bottom: 1.5em;
@@ -662,7 +725,7 @@ section{
 }
 
 /* formatting group contributions tables */
-.group_contributions dd{
+.group_contributions dd {
     display: grid;
     grid-template-columns: max-content 1fr;
     gap: 0.25em 1em;
@@ -673,17 +736,17 @@ section{
     border: 1px solid #3b82f6;
 }
 
-.group_contributions dt{
+.group_contributions dt {
     font-size: 1.1rem;
 }
 
-.about_layout h1{
+.about_layout h1 {
     margin-top: 0;
     font-size: 1.4em;
     color: #09427e;
 }
 
-.course_details{
+.course_details {
     font-weight: bold;
     margin: 0 0 1em;
     padding: 0.75em 1em;
@@ -692,11 +755,11 @@ section{
     border: 1px solid #3b82f6;
 }
 
-.course_details li ul li{
+.course_details li ul li {
     font-weight: normal;
 }
 
-.about_intro{
+.about_intro {
     display: grid;
     grid-template-columns: max-content 1fr;
     gap: 0.25em 1em;
@@ -709,7 +772,7 @@ section{
     font-size: 1.5rem;
 }
 
-.main_about{
+.main_about {
     margin: 2%;
 }
 
@@ -749,26 +812,26 @@ section{
     }
 
     .apply-page main {
-    width: 100%;
-    padding: 15px;
+        width: 100%;
+        padding: 15px;
     }
 
     .apply-page {
-    background-size: 100% auto;
-    background-position: center top;
-    background-repeat: repeat-y;
-    background-attachment: scroll;
+        background-size: 100% auto;
+        background-position: center top;
+        background-repeat: repeat-y;
+        background-attachment: scroll;
     }
 
     .apply_intro_box {
-    width: 95%;
-    max-width: 900px;
-    margin: 0 auto 20px;
-    padding: 20px;
-    background-color: white;
-    border: 2px solid #6495ed;
-    border-top: none;
-    border-radius: 0 0 20px 20px;
+        width: 95%;
+        max-width: 900px;
+        margin: 0 auto 20px;
+        padding: 20px;
+        background-color: white;
+        border: 2px solid #6495ed;
+        border-top: none;
+        border-radius: 0 0 20px 20px;
     }
 
     .jobs-layout {
@@ -787,7 +850,7 @@ section{
     }
 
     h1,
-    main > p {
+    main>p {
         margin-left: 1rem;
         margin-right: 1rem;
     }
