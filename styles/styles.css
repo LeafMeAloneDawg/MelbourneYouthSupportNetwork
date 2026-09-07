@@ -24,6 +24,7 @@ body {
     flex-direction: column;
     width: 100%;
     overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
 
 }
 
@@ -184,11 +185,12 @@ table {
     margin-top: 10px;
     text-align: center;
 }
+
 #index-description p{
     margin-top: 6px;
 }
 
-/* */
+/* Set font size of company slogan to 1.5x normal font size */
 .company-slogan{
     font-size: 1.5em;
 }
