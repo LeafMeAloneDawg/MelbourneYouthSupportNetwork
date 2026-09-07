@@ -146,7 +146,12 @@ table {
 /* =========================
    Index PAGE
    ========================= */
-
+.content-background-and-border{
+    background-color: #eaf2ff;
+    border: 2px solid;
+    border-radius: 6px;
+    max-width: 1600px;
+}
 #index_logo {
     background-color: #eaf2ff;
     border: 2px solid;
@@ -185,10 +190,20 @@ table {
     margin-top: 10px;
 }
 
-.content-background-and-border{
-    background-color: #eaf2ff;
-    border: 2px solid;
-    border-radius: 6px;
+
+/* Background image source: https://wall.alphacoders.com/big.php?i=785129 */
+
+#acknowledgment-of-country{
+    display: flex;
+    margin-top: 10px;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#acknowledgment-of-country img{
+    height: auto;
+    width: 200px;
+    margin-right: 10px;
 }
 
 
