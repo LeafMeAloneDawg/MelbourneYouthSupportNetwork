@@ -146,6 +146,8 @@ table {
 /* =========================
    Index PAGE
    ========================= */
+
+/* Class to add rounded border and background to elements */
 .content-background-and-border{
     background-color: #eaf2ff;
     border: 2px solid;
@@ -153,6 +155,7 @@ table {
     max-width: 1600px;
     min-width: 1600px;
 }
+/* Add a border and background to the logo and heading for index page, as well as setting the width to be consistent with other elements */
 #index_logo {
     background-color: #eaf2ff;
     border: 2px solid;
@@ -161,7 +164,7 @@ table {
     max-width: 1600px;
     min-width: 1600px;
 }
-
+/* Sets a repeating background image for index.html - copied directly from apply-page class */
 .index-page {
     background-image: url("images/Lightblue.jpeg");
     background-size: 100% auto;
@@ -169,7 +172,7 @@ table {
     background-repeat: repeat-y;
     background-attachment: fixed;
 }
-
+/* Set main element of index.html to use flexbox column display, aligning items in the center of the page */
 #index-content {
     display: flex;
     flex-direction: column;
@@ -177,8 +180,6 @@ table {
 }
 
 #index-description {
-    display: flex;
-    flex-direction: column;
     padding: 1.25em 1.5em;
     margin-top: 10px;
     text-align: center;
@@ -186,29 +187,30 @@ table {
 #index-description p{
     margin-top: 6px;
 }
-.company-slogan{
-    align-self:center; 
-    font-size: 1.5em;
-    margin-bottom: 10px;
-}
 
+/* */
+.company-slogan{
+    font-size: 1.5em;
+}
+/* Set program schedule div to use flexbox colum display and add margin between it and element above */
 #programSchedule-layout{
     text-align: center;
     display: flex;
     flex-direction: column;
-    min-width: 1600px;
     margin-top: 10px;
 }
 
 
-/* Background image source: https://wall.alphacoders.com/big.php?i=785129 */
+/* Acknowledgment of country styling
+    Set display to flexbox to allow for image to the left of text.
+    Add margin between it and element above
+    Set size of image to suitable size and add margin between image and text
+*/
 
 #acknowledgment-of-country{
     display: flex;
     margin-top: 10px;
     text-align: center;
-    background-repeat: no-repeat;
-    background-position: center;
 }
 #acknowledgment-of-country img{
     height: auto;
