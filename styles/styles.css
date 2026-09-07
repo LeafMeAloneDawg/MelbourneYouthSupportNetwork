@@ -146,6 +146,14 @@ table {
 /* =========================
    Index PAGE
    ========================= */
+
+#index_logo {
+    background-color: #eaf2ff;
+    border: 2px solid;
+    border-radius: 6px;
+    border-top: none;
+}
+
 .index-page {
     background-image: url("images/Lightblue.jpeg");
     background-size: 100% auto;
@@ -163,33 +171,25 @@ table {
 #index-description {
     display: flex;
     flex-direction: column;
-    border: 2px solid;
-    border-radius: 6px;
     padding: 1.25em 1.5em;
-    background-color: #eaf2ff;
     margin-top: 10px;
 }
 
-#index_logo {
-    background-color: #eaf2ff;
-    border: 2px solid;
-    border-radius: 6px;
-    border-top: none;
 
-}
 
 #programSchedule-layout{
     text-align: center;
     display: flex;
     flex-direction: column;
-    border: 2px solid;
-    border-radius: 6px;
     min-width: 1600px;
     margin-top: 10px;
-    background-color: #eaf2ff;
 }
 
-
+.content-background-and-border{
+    background-color: #eaf2ff;
+    border: 2px solid;
+    border-radius: 6px;
+}
 
 
 
