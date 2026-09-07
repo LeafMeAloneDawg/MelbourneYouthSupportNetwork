@@ -675,6 +675,7 @@ section{
 
 .group_contributions dt{
     font-size: 1.1rem;
+    max-width: 100%;
 }
 
 .about_layout h1{
