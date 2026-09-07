@@ -151,12 +151,15 @@ table {
     border: 2px solid;
     border-radius: 6px;
     max-width: 1600px;
+    min-width: 1600px;
 }
 #index_logo {
     background-color: #eaf2ff;
     border: 2px solid;
     border-radius: 6px;
     border-top: none;
+    max-width: 1600px;
+    min-width: 1600px;
 }
 
 .index-page {
@@ -178,9 +181,16 @@ table {
     flex-direction: column;
     padding: 1.25em 1.5em;
     margin-top: 10px;
+    text-align: center;
 }
-
-
+#index-description p{
+    margin-top: 6px;
+}
+.company-slogan{
+    align-self:center; 
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
 
 #programSchedule-layout{
     text-align: center;
