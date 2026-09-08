@@ -11,23 +11,19 @@
     <!--
         Acknowledgement of GenAI use:
         The initial page scaffold and boilerplate were drafted with the
-        assistance of GenAI (Claude), then reviewed, edited and completed by
+        assistance of GenAI, then reviewed, edited and completed by
         Mohammad Aquib. All job content is fictional and written for the
         COS10026 project scenario (Group 3, G03 - Community and Social Services).
     -->
 
-    <!--
-        Stylesheets:
-        styles.css - shared site-wide styling (loaded first)
-        jobs.css   - styling specific to this Jobs page
-    -->
+    <!-- All the main styling for this page lives in the shared
+         styles.css (see its "JOBS PAGE" section) -->
     <link rel="stylesheet" href="styles/styles.css">
- 
-
+    
     <!--
-        Embedded CSS (page-specific, deliberately small).
-        Presents the six-character job reference number as a distinct "chip".
-        Only jobs.html needs this rule, so it is kept out of the shared sheet.
+        Embedded CSS example (page-specific, deliberately small):
+        styles the six-character job reference number as a distinct "chip".
+        Only jobs.html uses it, so it is not in the shared stylesheet.
     -->
     <style>
         .job-ref {
@@ -66,21 +62,24 @@
     <main id="main-content">
         <h1>Job Vacancies</h1>
 
-        <p class="lead">
-            Melbourne Youth Support Network is growing our team of youth workers,
-            volunteer coordinators and community support staff. Explore our current
-            opportunities below &mdash; each role lists the responsibilities,
-            requirements and how to apply.
-        </p>
-
-        <!-- Inline CSS: a one-off emphasis on a single, time-sensitive line -->
-        <p style="color: #09427e; font-weight: bold;">
-            Applications for all roles close Friday 25 September 2026.
-        </p>
-
         <div class="jobs-layout">
 
             <div class="job-listings">
+
+                <!-- Intro panel: page summary and the application closing date,
+                     kept in one box above the job cards -->
+                <div class="jobs-intro">
+                    <p class="lead">
+                        Melbourne Youth Support Network is growing our team of youth workers,
+                        volunteer coordinators and community support staff. Explore our current
+                        opportunities below &mdash; each role lists the responsibilities,
+                        requirements and how to apply.
+                    </p>
+                    <!-- Inline CSS: a one-off emphasis on a single, time-sensitive line -->
+                    <p style="color: #09427e; font-weight: bold;">
+                        Applications for all roles close Friday 25 September 2026.
+                    </p>
+                </div>
 
                 <!-- ============ Job 1 ============ -->
                 <section aria-labelledby="job-csw">
@@ -218,8 +217,9 @@
 
             <!--
                 Meaningful aside: content genuinely related to the vacancies but
-                not part of any single job description. jobs.css positions it
-                beside the job list (page-specific CSS requirement for jobs.html).
+                not part of any single job description. styles.css (JOBS PAGE
+                section) positions it beside the job list - the page-specific
+                CSS requirement for jobs.html.
             -->
             <aside aria-labelledby="working-here">
                 <h2 id="working-here">Working at MYSN</h2>

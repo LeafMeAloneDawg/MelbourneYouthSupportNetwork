@@ -2,7 +2,7 @@
 filename: [style.css]
 author: [Group03]
 created: [01/09/2026]
-last modified: [07/09/2026]
+last modified: [08/09/2026]
 description: [styles.html CSS file]
 */
 
@@ -281,27 +281,36 @@ table {
     background-attachment: fixed, fixed;
 }
 
-/* Paragraphs that sit directly on the background photo get a
-   semi-transparent white panel so they stay readable */
-.jobs-page main>p {
-    width: fit-content;
-    max-width: 100%;
-    margin: 0 2.2rem 1em;
-    padding: 0.5em 0.9em;
-    background-color: rgba(255, 255, 255, 0.78);
+/* Page title - align its left edge with the intro text and the job cards below */
+.jobs-page h1 {
+    margin: 1em 2.2rem 0.5em;
+}
+
+/* Intro panel - page summary + closing date in one box, sitting at the top
+   of the left column so it lines up with the job cards below it */
+.jobs-intro {
+    margin-bottom: 1.5em;
+    padding: 1.25em 1.5em;
+    background-color: #f3fcffde;
+    border: 1px solid #3b82f6;
+    border-left: 5px solid #09427e;
     border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+}
+
+.jobs-intro p {
+    margin: 0 0 0.6em;
+}
+
+.jobs-intro p:last-child {
+    margin-bottom: 0;
 }
 
 .lead {
-    max-width: 65ch;
     font-size: 1.05em;
 }
 
-/* Jobs Layout */
-
-/* ==============================================================
-   Two-column layout: job list + aside
-   ============================================================== */
+/* Jobs Layout - two columns: the job list on the left, the aside on the right */
 
 .jobs-layout {
     display: flex;
@@ -323,8 +332,8 @@ table {
     overflow: hidden;
     margin-bottom: 1.5em;
     padding: 1.25em 1.5em;
-    /* warm off-white; slightly translucent so the background photo is
-       still visible through the card. The crumpled-paper texture is
+    /* pale blue-white, slightly translucent so the background photo stays
+       faintly visible through the card. The crumpled-paper texture is
        added by ::before below. */
     background-color: #f3fcffde;
     border: 1px solid #3b82f6;
@@ -429,20 +438,15 @@ aside a {
     border-top: 1px solid black;
 }
 
-/* ==============================================================
-   "Crumpled paper" texture for the job cards and the aside.
-   Uses a real paper photo (styles/images/crumpled-paper.jpg) as
-   a ::before layer behind the text. The layer is desaturated and
-   brightened so it reads as texture, then multiplied onto the
-   warm off-white card so the creases show as soft shadow.
-   Tune with `opacity` below. If the image file is missing the
-   card simply falls back to its plain off-white background.
+/* Crumpled-paper texture for the job cards and the aside.
+   A photo (styles/images/crumpled-paper.jpg) is used as a ::before layer,
+   desaturated and lightened with a cream veil, then multiplied onto the
+   card so only the creases show as soft shadow. Adjust with `opacity`.
+   Falls back to the plain card background if the image is missing.
 
-   Image: "White crumpled paper" by Tim Mossholder.
-   Source: https://www.pexels.com/photo/white-crumpled-paper-11605087/
-   Licence: Pexels Licence - free to use, attribution not required;
-            credited here as required by the assessment brief.
-   ============================================================== */
+   Image: "White crumpled paper" by Tim Mossholder, Pexels.
+   https://www.pexels.com/photo/white-crumpled-paper-11605087/
+   Pexels Licence - attribution not required; credited per the assessment brief. */
 
 .job-listings section::before,
 aside::before {
@@ -936,7 +940,8 @@ section{
     }
 
     h1,
-    main>p {
+    main>p,
+    .jobs-page h1 {
         margin-left: 1rem;
         margin-right: 1rem;
     }
