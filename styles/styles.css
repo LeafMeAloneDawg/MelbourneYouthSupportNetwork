@@ -110,6 +110,8 @@ footer a:hover {
 }
 
 .skip-link:focus {
+    /* it appears in the viewport even if the page is scrolled */
+    position: fixed;
     left: 10px;
     top: 10px;
 
