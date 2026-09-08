@@ -261,6 +261,13 @@ table {
     margin-bottom: 10px;
 }
 
+#programSchedule{
+    width: 95%;
+    max-width: 100%;
+    table-layout: fixed;
+    font-size: smaller;
+}
+
 /* Acknowledgment of country styling
     Set display to flexbox to allow for image to the left of text.
     Add margin between it and element above
@@ -1010,6 +1017,24 @@ section{
     .address select,
     .contact input {
         width: 100%;
+    }
+    
+    #acknowledgment-of-country{
+        flex-direction: column;
+        
+    }
+    #acknowledgment-of-country img{
+        margin: auto auto;
+    }
+
+    #description-image-text{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #description-image-text img{
+        width: 80%;
+        margin:auto auto;
     }
 
 }
