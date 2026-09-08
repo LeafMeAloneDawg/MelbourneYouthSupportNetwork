@@ -288,9 +288,7 @@ table {
     background-repeat: no-repeat, no-repeat;
     background-position: center top, center top;
     background-size: cover, cover;
-    /* scroll, not fixed: a fixed background is re-painted on every scroll
-       frame and was the main cause of scroll lag on this page */
-    background-attachment: scroll, scroll;
+    background-attachment: fixed, fixed;
 }
 
 /* Page title - align its left edge with the intro text and the job cards below */
@@ -451,10 +449,10 @@ aside a {
 }
 
 /* Crumpled-paper texture for the job cards and the aside.
-   A photo (images/crumpled-paper.jpg, a resized/compressed copy) is used as a
-   ::before layer, lightened with a cream veil so only the creases show as soft
-   shading. Adjust with `opacity`. Falls back to the plain card background if
-   the image is missing.
+   A photo (images/crumpled-paper.jpg, a resized/compressed copy) sits in a
+   ::before layer, lightened with a cream veil so only the creases show as
+   soft shading. Adjust with `opacity`. Falls back to the plain card
+   background if the image is missing.
 
    Image: "White crumpled paper" by Tim Mossholder, Pexels.
    https://www.pexels.com/photo/white-crumpled-paper-11605087/
