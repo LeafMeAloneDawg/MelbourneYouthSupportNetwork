@@ -172,6 +172,7 @@ table {
 /* Fixes width of logo text overlay class for the index page specifically */
 #index_logo_text_overlay{
     width: 40%;
+    font-size: 3em;
 }
 /* Sets a repeating background image for index.html - copied directly from apply-page class */
 .index-page {
@@ -194,6 +195,7 @@ table {
     padding: 1.25em 1.5em;
     margin-top: 10px;
     align-items: center;
+    font-weight: bold;
 }
 
 #index-description p{
