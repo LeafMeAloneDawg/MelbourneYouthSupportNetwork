@@ -104,16 +104,13 @@ footer a:hover {
 /* Skip to main */
 
 .skip-link {
-    position: absolute;
-    left: -9999px;
-    top: 0;
-}
-
-.skip-link:focus {
-    /* it appears in the viewport even if the page is scrolled */
+    /* Always a fixed layer, moved off the top of the screen until focused.
+       This way it drops into the viewport the instant it receives focus,
+       no matter how far down the page has been scrolled. */
     position: fixed;
-    left: 10px;
     top: 10px;
+    left: 10px;
+    z-index: 1000;
 
     padding: 10px 15px;
     background-color: white;
@@ -121,7 +118,11 @@ footer a:hover {
     border: 2px solid #7fdbff;
     border-radius: 5px;
 
-    z-index: 1000;
+    transform: translateY(-200%);
+}
+
+.skip-link:focus {
+    transform: translateY(0);
 }
 
 /* Tables shared between index and about page */
