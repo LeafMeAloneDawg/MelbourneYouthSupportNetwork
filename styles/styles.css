@@ -164,6 +164,14 @@ table {
     border-top: none;
     max-width: 1600px;
     min-width: 1600px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+/* Fixes width of logo text overlay class for the index page specifically */
+#index_logo_text_overlay{
+    width: 40%;
 }
 /* Sets a repeating background image for index.html - copied directly from apply-page class */
 .index-page {
