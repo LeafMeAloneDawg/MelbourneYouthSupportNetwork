@@ -173,6 +173,8 @@ table {
 
 #company_logo{
     width:95%;
+    display: block;
+    margin: 0 auto;
 }
 /* Fixes width of logo text overlay class for the index page specifically */
 #index_logo_text_overlay{
@@ -181,14 +183,14 @@ table {
     left: 50%;
     transform: translate(-50%, -50%);
     font-weight: bold;
-    font-size: 2.5em;
+    font-size: clamp(1rem, 4vw, 2.5rem);
     color: #09427e;
     margin: 0 0 1rem;
     padding: 0.75rem 1rem;
     background-color: rgba(234, 242, 255, 0.62);
     border-radius: 2rem 2rem 2rem 2rem;
     border: 1px solid #3b82f6;
-    
+    white-space: nowrap;
     text-align: center;
     
 }
@@ -225,11 +227,13 @@ table {
 
 #description-image-text{
     display: flex;
+    align-items: center;
 }
 
 #description-image-text img{
     width: 40%;
     height: auto;
+    object-fit: contain;
     margin-left: 10px;
     border: 2px solid;
     border-radius: 6px;
@@ -1033,7 +1037,7 @@ section{
     }
 
     #description-image-text img{
-        width: 80%;
+        width: 90%;
         margin:auto auto;
     }
 
