@@ -888,7 +888,6 @@ section{
 /* nested list in course details */
 .course_details li ul li{
     font-weight: normal;
-    padding: auto;
     margin: 0;
 }
 
