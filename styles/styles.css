@@ -273,18 +273,18 @@ table {
     min-height: 100vh;
 
     /*
-       Background photo for the Jobs page.
-       Image: "Silhouette of a group of young people at a railing" by Emir Bozkurt.
-       Source: https://www.pexels.com/photo/15639173/
-       Licence: Pexels Licence - free to use, attribution not required;
-                credited here as required by the assessment brief.
+       Background photo for the Jobs page (file: images/Job_page_background.jpg,
+       a resized/compressed copy).
+       Image: "Silhouette of a group of young people at a railing" by Emir Bozkurt, Pexels.
+       https://www.pexels.com/photo/15639173/
+       Pexels Licence - attribution not required; credited per the assessment brief.
        A translucent light wash is layered over the photo so body text and
        the job cards keep enough contrast (accessibility guideline).
     */
     background-color: #eef3fb;
     background-image:
         linear-gradient(rgba(238, 243, 251, 0.55), rgba(238, 243, 251, 0.72)),
-        url("images/pexels-emirbozkurt-15639173.jpg");
+        url("images/Job_page_background.jpg");
     background-repeat: no-repeat, no-repeat;
     background-position: center top, center top;
     background-size: cover, cover;
@@ -449,9 +449,9 @@ aside a {
 }
 
 /* Crumpled-paper texture for the job cards and the aside.
-   A photo (styles/images/crumpled-paper.jpg) is used as a ::before layer,
-   desaturated and lightened with a cream veil, then multiplied onto the
-   card so only the creases show as soft shadow. Adjust with `opacity`.
+   A photo (images/Crumpled-paper.jpg, a resized/compressed copy) is used as a
+   ::before layer, desaturated and lightened with a cream veil, then multiplied
+   onto the card so only the creases show as soft shadow. Adjust with `opacity`.
    Falls back to the plain card background if the image is missing.
 
    Image: "White crumpled paper" by Tim Mossholder, Pexels.
@@ -468,18 +468,17 @@ aside::before {
     left: 0;
     z-index: 0;
     pointer-events: none;
-    /* A cream veil is baked over the paper photo so the texture always
-       stays light, no matter how dark the source image is. Only the
-       creases come through as soft shadow. */
+    /* A cream veil is baked over the paper photo so the texture stays light;
+       only the creases show through as soft shading.
+       No filter / mix-blend-mode here on purpose - those force the browser to
+       re-composite this layer on every scroll frame and made the page lag. */
     background-image:
-        linear-gradient(rgba(252, 250, 245, 0.58), rgba(252, 250, 245, 0.58)),
-        url("images/crumpled-paper.jpg");
+        linear-gradient(rgba(252, 250, 245, 0.55), rgba(252, 250, 245, 0.55)),
+        url("images/Crumpled-paper.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    filter: grayscale(1) brightness(1.12) contrast(0.98);
     opacity: 0.5;
-    mix-blend-mode: multiply;
 }
 
 /* vary the crop per card so they don't look identical */
