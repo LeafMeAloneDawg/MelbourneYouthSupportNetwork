@@ -153,26 +153,44 @@ table {
     background-color: #eaf2ff;
     border: 2px solid;
     border-radius: 16px;
+    width: 95%;
     max-width: 1600px;
-    min-width: 1600px;
+    
 }
 /* Add a border and background to the logo and heading for index page, as well as setting the width to be consistent with other elements */
-#index_logo {
+#index_banner {
     background-color: #eaf2ff;
     border: 2px solid;
     border-radius: 16px;
     border-top: none;
+    width: 95%;
     max-width: 1600px;
-    min-width: 1600px;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
+    
+}
 
+#company_logo{
+    width:95%;
 }
 /* Fixes width of logo text overlay class for the index page specifically */
 #index_logo_text_overlay{
-    width: 40%;
-    font-size: 3em;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 2.5em;
+    color: #09427e;
+    margin: 0 0 1rem;
+    padding: 0.75rem 1rem;
+    background-color: rgba(234, 242, 255, 0.62);
+    border-radius: 2rem 2rem 2rem 2rem;
+    border: 1px solid #3b82f6;
+    
+    text-align: center;
+    
 }
 /* Sets a repeating background image for index.html - copied directly from apply-page class */
 .index-page {
@@ -203,15 +221,18 @@ table {
     font-size: 1.1em;
 }
 
-#index-description img{
-    width: 600px;
-    margin-left: 10px;
-    border: 2px solid;
-    border-radius: 6px;
-}
+
 
 #description-image-text{
     display: flex;
+}
+
+#description-image-text img{
+    width: 40%;
+    height: auto;
+    margin-left: 10px;
+    border: 2px solid;
+    border-radius: 6px;
 }
 
 /* Company Slogan Styling
@@ -252,8 +273,9 @@ table {
     text-align: center;
 }
 #acknowledgment-of-country img{
-    height: auto;
-    width: 200px;
+    
+    margin: auto auto;
+    max-height: 143px;
     margin-right: 10px;
 }
 
