@@ -796,19 +796,24 @@ textarea:focus {
 /* text overlay in banner image */
 .text_overlay{
     position: absolute;
-    top: 75%;
+    top: 90%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-weight: bold;
-    font-size: 3vw;
+    font-size: 1vw;
     color: #09427e;
     margin: 0 0 1rem;
-    padding: 0.75rem 1rem;
+    padding: 1rems;
     background-color: rgba(234, 242, 255, 0.62);
     border-radius: 2rem 2rem 2rem 2rem;
     border: 1px solid #3b82f6;
     width: 20%;
     text-align: center;
+}
+
+figure:hover figcaption::after{
+    content: " We are pretty cool! Maybe even the best group ever!";
+    color: red;
 }
 
 /* formatting table */
@@ -870,9 +875,9 @@ section{
 }
 
 /* heading in about page */
-.about_layout h1{
+.about_layout h2{
     margin-top: 0;
-    font-size: 1.4em;
+    font-size: 1.4rem;
     color: #09427e;
 }
 
