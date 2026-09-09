@@ -813,7 +813,7 @@ textarea:focus {
 
 figure:hover figcaption::after{
     content: " We are pretty cool! Maybe even the best group ever!";
-    color: red;
+    color: darkred;
 }
 
 /* formatting table */
