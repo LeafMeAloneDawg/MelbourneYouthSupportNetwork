@@ -2,7 +2,7 @@
 filename: [style.css]
 author: [Group03]
 created: [01/09/2026]
-last modified: [08/09/2026]
+last modified: [09/09/2026]
 description: [styles.html CSS file]
 */
 
@@ -578,12 +578,13 @@ aside>* {
 
 .apply_intro_box h1 {
     margin: 0 0 10px;
-    font-size: 4em;
+    font-size: clamp(3rem, 7vw, 4rem);
 }
 
 .apply_intro_box p {
     margin: 0;
     line-height: 1.5;
+    font-size: clamp(0.95rem, 2vw, 1.15rem)
 }
 
 /* Fieldsets */
@@ -1055,5 +1056,18 @@ section{
 
     .job-meta dd {
         margin-bottom: 0.4em;
+    }
+
+     #form6 {
+        grid-template-columns: 1fr;
+    }
+
+    .other_skills {
+        grid-column: 1;
+    }
+
+    .form_buttons {
+        flex-direction: column;
+        align-items: center;
     }
 }
