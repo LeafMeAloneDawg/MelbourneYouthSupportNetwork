@@ -95,10 +95,43 @@ footer {
 footer a {
     color: #7fdbff;
     text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
 }
 
 footer a:hover {
     text-decoration: underline;
+}
+
+/* Footer link icons - white chip keeps each logo legible on the dark footer */
+footer a img {
+    height: 22px;
+    width: auto;
+    padding: 4px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    transition: transform 0.15s ease;
+}
+
+/* on hover / keyboard focus the icon grows and wiggles continuously */
+@keyframes footer-icon-shake {
+    0%, 100% { transform: scale(1.4) rotate(-8deg); }
+    50%      { transform: scale(1.4) rotate(8deg); }
+}
+
+footer a:hover img,
+footer a:focus img {
+    transform: scale(1.4);
+    animation: footer-icon-shake 0.3s ease-in-out infinite;
+}
+
+/* respect users who prefer reduced motion - keep the grow, drop the shake */
+@media (prefers-reduced-motion: reduce) {
+    footer a:hover img,
+    footer a:focus img {
+        animation: none;
+    }
 }
 
 /* Skip to main */
@@ -796,14 +829,16 @@ textarea:focus {
 /* text overlay in banner image */
 .text_overlay{
     position: absolute;
-    top: 90%;
+    bottom: 6%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    /* anchored to the bottom of the photo so the hover text grows upward
+       and the box stays within the image border */
+    transform: translateX(-50%);
     font-weight: bold;
     font-size: 1vw;
     color: #09427e;
-    margin: 0 0 1rem;
-    padding: 1rems;
+    margin: 0;
+    padding: 1rem;
     background-color: rgba(234, 242, 255, 0.62);
     border-radius: 2rem 2rem 2rem 2rem;
     border: 1px solid #3b82f6;
@@ -827,8 +862,7 @@ tbody tr:nth-child(odd){
 .table_layout{
     margin: 0 auto;
     padding-left: 1rem;
-    overflow-wrap: normal;
-    word-break: break-word;
+    overflow-wrap: break-word;
 }
 
 /* table caption */
@@ -865,8 +899,7 @@ section{
 .group_contributions dd ol,
 .group_contributions dd li {
     min-width: 0;
-    overflow-wrap: normal;
-    word-break: break-word;
+    overflow-wrap: break-word;
 }
 
 /* padding for nested list */
