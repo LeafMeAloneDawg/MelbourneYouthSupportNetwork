@@ -775,22 +775,21 @@ textarea:focus {
    ABOUT PAGE
    ========================= */
 
-
-/* formatting ABOUT US title in banner image */
+/* formatting group photo/banner */
 .banner_text{
     position: relative;
     display: grid;
     place-items: center;
     width: 100%;
     max-width: 100%;
+    margin: 0;
 }
 
-/* image in banner image */
+/* image in banner */
 .banner_text img{
      border-radius: 2rem 2rem 2rem 2rem;
-     width: 60%;
+     width: 50%;
      height: auto;
-     
 }
 
 /* text overlay in banner image */
@@ -811,9 +810,11 @@ textarea:focus {
     text-align: center;
 }
 
+/* hover text on image */
 figure:hover figcaption::after{
-    content: " We are pretty cool! Maybe even the best group ever!";
+    content: "We are pretty cool! Maybe even the best group ever!";
     color: darkred;
+    display: block;
 }
 
 /* formatting table */
@@ -824,6 +825,9 @@ tbody tr:nth-child(odd){
 /* table layout */
 .table_layout{
     margin: 0 auto;
+    padding-left: 1rem;
+    overflow-wrap: normal;
+    word-break: break-word;
 }
 
 /* table caption */
@@ -864,9 +868,9 @@ section{
     word-break: break-word;
 }
 
+/* padding for nested list */
 .group_contributions dd ol{
     padding: 1rem 1rem;
-    
 }
 
 /* definition list term in about page */
