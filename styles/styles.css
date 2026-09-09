@@ -164,7 +164,7 @@ table {
 #index_banner {
     background-color: #eaf2ff;
     border: 2px solid;
-    border-radius: 16px;
+    border-radius: 0 0 2rem 2rem;
     border-top: none;
     width: 95%;
     max-width: 1600px;
