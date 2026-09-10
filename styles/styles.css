@@ -1169,6 +1169,10 @@ section{
     #programSchedule{
         font-size: x-small;
     }
+    /*  Make company slogan smaller on small screens */
+    .company-slogan{
+        font-size: small;
+    }
 
 }
 
