@@ -1034,10 +1034,7 @@ section{
         margin-right: 1rem;
     }
 
-    .apply-page main {
-        width: 100%;
-        padding: 15px;
-    }
+      /* Apply Page */
 
     .apply-page {
         background-size: 100% auto;
@@ -1046,53 +1043,108 @@ section{
         background-attachment: scroll;
     }
 
+    .apply-main {
+        width: 100%;
+        padding: 0;
+    }
+
+    /* Header shrinks with screen */
     .apply_intro_box {
         width: 95%;
         max-width: 900px;
         margin: 0 auto 20px;
-        padding: 20px;
-        background-color: white;
-        border: 2px solid #6495ed;
-        border-top: none;
-        border-radius: 0 0 20px 20px;
+        padding: 15px;
     }
 
+    .apply_intro_box h1 {
+        font-size: clamp(2rem, 10vw, 3rem);
+    }
 
-    fieldset {
+    /* Make form itself responsive */
+    .apply-main form {
         width: 95%;
+        max-width: 800px;
+        margin: 0 auto;
     }
 
-    #personal_details_form,
-    #address_form {
+    /* Fieldsets fill responsive form */
+    fieldset {
+        width: 100%;
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    /* Personal details */
+    #personal_details_form {
         grid-template-columns: 1fr;
+        column-gap: 0;
+        row-gap: 15px;
     }
 
-    #contact_form,
+    .details {
+        grid-template-columns: 1fr;
+        gap: 5px;
+    }
+
+    .details input {
+        width: 100%;
+    }
+
+    /* Gender */
     #gender_form {
         flex-direction: column;
         align-items: flex-start;
+        gap: 10px;
+    }
+
+    /* Address */
+    #address_form {
+        grid-template-columns: 1fr;
+        column-gap: 0;
+        row-gap: 15px;
+    }
+
+    .address {
+        grid-template-columns: 1fr;
+        gap: 5px;
+    }
+
+    .address input,
+    .address select {
+        width: 100%;
+    }
+
+    /* Contact */
+    #contact_form {
+        flex-direction: column;
         gap: 15px;
     }
 
+    .contact {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+    .contact input {
+        width: 100%;
+    }
+
+    /* Skills */
     #skills_form {
         grid-template-columns: 1fr 1fr;
+        gap: 15px;
     }
 
     .other_skills {
         grid-column: 1 / 3;
     }
 
-    .details,
-    .address {
-        grid-template-columns: 1fr;
-    }
-
-    .address input,
-    .address select,
-    .contact input {
+    .other_skills textarea {
         width: 100%;
     }
-    
+
     #acknowledgment-of-country{
         flex-direction: column;
         
