@@ -678,7 +678,7 @@ textarea:focus {
 
 /* Job type Styles */
 
-#form1 {
+#reference_number_form {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -686,7 +686,7 @@ textarea:focus {
 
 /* Name and Date of Birth Styles */
 
-#form2 {
+#personal_details_form {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 80px;
@@ -702,7 +702,7 @@ textarea:focus {
 
 /* Gender Styles */
 
-#form3 {
+#gender_form {
     display: flex;
     align-items: center;
     gap: 30px;
@@ -716,7 +716,7 @@ textarea:focus {
 
 /* Address Styles */
 
-#form4 {
+#address_form {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 40px;
@@ -738,7 +738,7 @@ textarea:focus {
 
 /* Contact Details Styles */
 
-#form5 {
+#contact_form {
     display: flex;
     gap: 75px;
 }
@@ -755,7 +755,7 @@ textarea:focus {
 
 /* Skills Styles */
 
-#form6 {
+#skills_form {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
