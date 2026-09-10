@@ -158,7 +158,11 @@ footer a:focus img {
     transform: translateY(0);
 }
 
-/* Tables shared between index and about page */
+/* Tables shared between index and about page 
+    Aligns table text to centre and adds padding
+    Creates table borders
+    Sets table heading to dark blue, and every second row to a lighter blue for easier visibility
+*/
 th,
 td {
     text-align: center;
@@ -196,7 +200,11 @@ thead{
     max-width: 1600px;
     
 }
-/* Add a border and background to the logo and heading for index page, as well as setting the width to be consistent with other elements */
+/*  Styling for index company logo and heading
+    Add a border and background to the logo and heading
+    Sets the width to be consistent with other elements
+    Centers the element within the webpage
+ */
 #index_banner {
     background-color: #eaf2ff;
     border: 2px solid;
@@ -248,7 +256,11 @@ thead{
     flex-direction: column;
     align-items: center;
 }
-
+/* Flexbox styling for index description element
+    Sets column direction so heading is centered above the container containing text and visual content
+    Sets the text to bold for easier readability
+    Sets a margin to space element from the one above it
+*/
 #index-description {
     display: flex;
     flex-direction: column;
@@ -257,13 +269,20 @@ thead{
     align-items: center;
     font-weight: bold;
 }
-
+/*  Styling for index description text  
+        Slightly increase font size
+        Add spacing between each paragraph vertically        
+*/
 #index-description p{
     margin: 4px 0 0 0;
     font-size: 1.1em;
 }
 
-
+/*  Styling for description and visual content
+        Align text and image container in center
+        Set width of image and maintain aspect ratio
+        Set min width of image to avoid it becoming too small when zooming
+*/
 
 #description-image-text{
     display: flex;
@@ -274,16 +293,14 @@ thead{
     width: 40%;
     min-width: 30%;
     height: auto;
-    object-fit: contain;
     margin-left: 10px;
     border: 2px solid;
     border-radius: 6px;
 }
-
-/* Company Slogan Styling
-    Set font size to 1.5x normal font size
-    Align text to center
-    Add rounded border and padding
+/*  Styling for company slogan container
+       Align text in center and make it larger
+       Add a rounded border
+       Add space between container and text below 
 */
 .company-slogan{
     display: block;
