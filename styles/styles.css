@@ -158,7 +158,11 @@ footer a:focus img {
     transform: translateY(0);
 }
 
-/* Tables shared between index and about page */
+/* Tables shared between index and about page 
+    Aligns table text to centre and adds padding
+    Creates table borders
+    Sets table heading to dark blue, and every second row to a lighter blue for easier visibility
+*/
 th,
 td {
     text-align: center;
@@ -178,6 +182,9 @@ table {
     max-width: 80%;
     margin-bottom: 10px;
 }
+thead{
+        background-color: #3b82f6;
+    }
 
 
 /* =========================
@@ -193,7 +200,11 @@ table {
     max-width: 1600px;
     
 }
-/* Add a border and background to the logo and heading for index page, as well as setting the width to be consistent with other elements */
+/*  Styling for index company logo and heading
+    Add a border and background to the logo and heading
+    Sets the width to be consistent with other elements
+    Centers the element within the webpage
+ */
 #index_banner {
     background-color: #eaf2ff;
     border: 2px solid;
@@ -204,6 +215,7 @@ table {
     position: relative;
     left: 50%;
     transform: translateX(-50%);
+    box-sizing: border-box;
     
 }
 
@@ -219,12 +231,12 @@ table {
     left: 50%;
     transform: translate(-50%, -50%);
     font-weight: bold;
-    font-size: clamp(1rem, 4vw, 2.5rem);
+    font-size: clamp(1rem, 2.5vw, 3rem);
     color: #09427e;
     margin: 0 0 1rem;
-    padding: 0.75rem 1rem;
+    padding: 0.5rem 1rem;
     background-color: rgba(234, 242, 255, 0.62);
-    border-radius: 2rem 2rem 2rem 2rem;
+    border-radius: 16px;
     border: 1px solid #3b82f6;
     white-space: nowrap;
     text-align: center;
@@ -244,7 +256,11 @@ table {
     flex-direction: column;
     align-items: center;
 }
-
+/* Flexbox styling for index description element
+    Sets column direction so heading is centered above the container containing text and visual content
+    Sets the text to bold for easier readability
+    Sets a margin to space element from the one above it
+*/
 #index-description {
     display: flex;
     flex-direction: column;
@@ -253,13 +269,20 @@ table {
     align-items: center;
     font-weight: bold;
 }
-
+/*  Styling for index description text  
+        Slightly increase font size
+        Add spacing between each paragraph vertically        
+*/
 #index-description p{
     margin: 4px 0 0 0;
     font-size: 1.1em;
 }
 
-
+/*  Styling for description and visual content
+        Align text and image container in center
+        Set width of image and maintain aspect ratio
+        Set min width of image to avoid it becoming too small when zooming
+*/
 
 #description-image-text{
     display: flex;
@@ -270,16 +293,14 @@ table {
     width: 40%;
     min-width: 30%;
     height: auto;
-    object-fit: contain;
     margin-left: 10px;
     border: 2px solid;
     border-radius: 6px;
 }
-
-/* Company Slogan Styling
-    Set font size to 1.5x normal font size
-    Align text to center
-    Add rounded border and padding
+/*  Styling for company slogan container
+       Align text in center and make it larger
+       Add a rounded border
+       Add space between container and text below 
 */
 .company-slogan{
     display: block;
@@ -307,6 +328,8 @@ table {
     max-width: 100%;
     table-layout: fixed;
     font-size: smaller;
+    margin: 0 auto 10px auto;
+
 }
 
 /* Acknowledgment of country styling
@@ -323,7 +346,7 @@ table {
 #acknowledgment-of-country img{
     
     margin: auto auto;
-    max-height: 143px;
+    max-height: 180px;
     margin-right: 10px;
 }
 
@@ -340,7 +363,7 @@ table {
 /* Jobs Background */
 
 .jobs-page {
-    min-height: 100vh;
+    min-height: 10auto0vh;
 
     /*
        Background photo for the Jobs page (file: images/Job_page_background.jpg,
@@ -1086,6 +1109,10 @@ section{
     #description-image-text img{
         width: 90%;
         margin:auto auto;
+    }
+    /*  Make table font size smaller on small screens   */
+    #programSchedule{
+        font-size: x-small;
     }
 
 }

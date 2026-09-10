@@ -10,36 +10,9 @@
     <meta name="description" content="index page for Melbourne Youth Support Network job application webpage">
     <link rel="stylesheet" href="./styles/styles.css">
     <title>Melbourne Youth Support Network</title>
-    <!-- Embedded CSS for youth program schedule table -->
+    <!-- Embedded CSS for company slogan qoute-->
     <style>
-        th,
-        td {
-            text-align: center;
-            padding: 5px;
-            margin: 0px;
-        }
-
-        table,
-        th,
-        td {
-            border: 2px solid;
-            border-collapse: collapse;
-        }
-
-        table {
-            background-color: white;
-            width: 80%;
-            align-self: center;
-            margin-bottom: 10px;
-        }
-
-        tr:nth-child(odd) {
-            background-color: #7fdbffB0;
-        }
-
-        tr:nth-child(1) {
-            background-color: #3b82f6;
-        }
+        q {color:#09427e;}
     </style>
 </head>
 
@@ -70,7 +43,7 @@
     </header>
 
     <main id="index-content">
-
+        <!--    Container for company description and visual content -->
         <div id="index-description" class="content-background-and-border">
             <q class="company-slogan"><b>No young person has to face life alone</b></q>
             <div id="description-image-text">
@@ -107,7 +80,7 @@
 
                     <p>A critical aspect of our program is to hold regular mentoring, sports
                         and recreation sessions, to provide youth free, regular events where
-                        they may enjoy themselves and connect with others</p>
+                        they may enjoy themselves and connect with others.</p>
 
                 </div>
                 <!-- Image source: https://creativeyouthland.org/projects/ -->
@@ -115,6 +88,7 @@
             </div>
 
         </div>
+        <!--    Container for program schedule table    -->
         <div id="programSchedule-layout" class="content-background-and-border">
             <h2>Program Schedule</h2>
             <table id="programSchedule">
@@ -146,7 +120,7 @@
                         <td colspan="3">Fitness / Gym</td>
                     </tr>
                     <tr>
-                        <td><b>Thur</b></td>
+                        <td><b>Thu</b></td>
                         <td colspan="2">Music Making / Recording</td>
                         <td colspan="2">Visual Arts</td>
                     </tr>
@@ -159,17 +133,20 @@
                 </tbody>
             </table>
         </div>
+        <!--    Container for acknowledgment of country and Australian Indigenous flag  -->
         <div id="acknowledgment-of-country" class="content-background-and-border">
             <!-- Image source https://wall.alphacoders.com/big.php?i=785129 -->
             <img src="styles/images/Aboriginal-flag.jpg" alt="Image of Indigenous Australian Flag">
-            <!-- This div ensures that the text remains in column layout, while maintaining indiviudal styling for the bold sentence at the end -->
-            <div>
+            <!-- This div ensures that the text remains in column layout, while maintaining indiviudal styling for the bold sentence at the end 
+                    Example of inline styling to add padding to the text.
+            -->
+            <div style="padding-right:10px;">
                 <p>Melbourne Youth Support Network would like to acknowledge the Wurundjeri People of the Kulin Nation,
                     and pay our respects to their Elders, past present and emerging. The Wurundjeri peoples were the
                     first practicing
-                    scientists in this area, many thousands of years before colonisation. We thank them for their
-                    dedicated and
-                    ongoing care for the land that we are lucky to call home.
+                    scientists in this area, many thousands of years before colonisation. 
+                    <br>
+                    We thank them for their dedicated and ongoing care for the land that we are lucky to call home.
                     <br>
                     MYSN recognises that Aboriginal and Torres-Strait Islander peoples still experience significant
                     disadvantages across many areas, such as child protection, justice, health, housing and education.
@@ -178,19 +155,11 @@
                     their knowledge is invaluable
                     in providing adequate support for all youths.
                 </p>
-                <!-- Example of inline styling for sentence below-->
-                <p><b style="margin-top: 15px;">MYSN does not tolerate racism or any other form of discrimination</b>
+                <p><b >MYSN does not tolerate racism or any other form of discrimination.</b>
                 </p>
             </div>
         </div>
     </main>
-    <!-- To add:
-Company Logo, hopefully as a banner
-
-Company Slogan - maybe as a "qoute"
-
-Image / visual content
--->
 
     <!-- Footer - consistent with the other pages -->
     <footer>
