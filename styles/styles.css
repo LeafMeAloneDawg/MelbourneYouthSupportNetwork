@@ -344,7 +344,6 @@ thead{
     text-align: center;
 }
 #acknowledgment-of-country img{
-    
     margin: auto auto;
     max-height: 180px;
     margin-right: 10px;
@@ -363,7 +362,7 @@ thead{
 /* Jobs Background */
 
 .jobs-page {
-    min-height: 10auto0vh;
+    min-height: 10;
 
     /*
        Background photo for the Jobs page (file: images/Job_page_background.jpg,
