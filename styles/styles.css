@@ -989,6 +989,28 @@ section{
         font-size: 1rem;
     }
 
+    .jobs-layout {
+        flex-direction: column;
+        margin: 1em 1rem 2em;
+    }
+
+    .job-listings,
+    aside {
+        flex: 1 1 auto;
+        width: auto;
+    }
+
+    aside {
+        position: static;
+    }
+
+    h1,
+    main>p,
+    .jobs-page h1 {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
     .apply-page main {
         width: 100%;
         padding: 15px;
@@ -1012,45 +1034,24 @@ section{
         border-radius: 0 0 20px 20px;
     }
 
-    .jobs-layout {
-        flex-direction: column;
-        margin: 1em 1rem 2em;
-    }
-
-    .job-listings,
-    aside {
-        flex: 1 1 auto;
-        width: auto;
-    }
-
-    aside {
-        position: static;
-    }
-
-    h1,
-    main>p,
-    .jobs-page h1 {
-        margin-left: 1rem;
-        margin-right: 1rem;
-    }
 
     fieldset {
         width: 95%;
     }
 
-    #form2,
-    #form4 {
+    #personal_details_form,
+    #address_form {
         grid-template-columns: 1fr;
     }
 
-    #form5,
-    #form3 {
+    #contact_form,
+    #gender_form {
         flex-direction: column;
         align-items: flex-start;
         gap: 15px;
     }
 
-    #form6 {
+    #skills_form {
         grid-template-columns: 1fr 1fr;
     }
 
@@ -1101,7 +1102,7 @@ section{
         margin-bottom: 0.4em;
     }
 
-     #form6 {
+     #skills_form {
         grid-template-columns: 1fr;
     }
 
