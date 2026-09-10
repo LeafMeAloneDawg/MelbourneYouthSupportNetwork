@@ -178,6 +178,9 @@ table {
     max-width: 80%;
     margin-bottom: 10px;
 }
+thead{
+        background-color: #3b82f6;
+    }
 
 
 /* =========================
@@ -204,6 +207,7 @@ table {
     position: relative;
     left: 50%;
     transform: translateX(-50%);
+    box-sizing: border-box;
     
 }
 
@@ -323,7 +327,7 @@ table {
 #acknowledgment-of-country img{
     
     margin: auto auto;
-    max-height: 143px;
+    max-height: 180px;
     margin-right: 10px;
 }
 
